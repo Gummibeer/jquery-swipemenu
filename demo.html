@@ -13,18 +13,18 @@
 		
 		<script type="text/javascript">
 		$(window).load(function() {
-			$('#mwSwipeMenuWrapper').swipeMenu({debug: true, background: true, animationTime: 500});
-			$('#mwSwipeMenuWrapper2').swipeMenu({debug: true, background: false, animationTime: 500});
+			$('#swipeMenuWrapper').swipeMenu({debug: true, background: true, animationTime: 500});
+			$('#swipeMenuWrapper2').swipeMenu({debug: true, background: false, animationTime: 500});
 			
 			$(window).on('resize', function() {
-				$('#mwSwipeMenuWrapper').swipeMenuReinit({debug: true, background: false, animationTime: 500});
-				$('#mwSwipeMenuWrapper2').swipeMenuReinit({debug: true, background: true, animationTime: 500});
+				$('#swipeMenuWrapper').swipeMenuReinit({debug: true, background: false, animationTime: 500});
+				$('#swipeMenuWrapper2').swipeMenuReinit({debug: true, background: true, animationTime: 500});
 			});
 		});
 		</script>
 	</head>
 	<body>
-		<div id="mwSwipeMenuWrapper">
+		<div id="swipeMenuWrapper">
 			<div class="swipeMenuContainer">
 				<ul>
 					<li>Beratung</li>
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		
-		<div id="mwSwipeMenuWrapper2">
+		<div id="swipeMenuWrapper2">
 			<div class="swipeMenuContainer">
 				<ul>
 					<li>Beratung</li>
