@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="css/swipemenu.css">
+		
+		<script src="js/jquery/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery/jquery.hammer.min.js"></script>
+		<script src="js/swipemenu.js"></script>
+		
+		<script type="text/javascript">
+		$(window).load(function() {
+			$('#mwSwipeMenuWrapper').swipeMenu({debug: true, background: true, animationTime: 500});
+			$('#mwSwipeMenuWrapper2').swipeMenu({debug: true, background: false, animationTime: 500});
+			
+			$(window).on('resize', function() {
+				$('#mwSwipeMenuWrapper').swipeMenuReinit({debug: true, background: false, animationTime: 500});
+				$('#mwSwipeMenuWrapper2').swipeMenuReinit({debug: true, background: true, animationTime: 500});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="mwSwipeMenuWrapper">
+			<div class="swipeMenuContainer">
+				<ul>
+					<li>Beratung</li>
+					<li>Konzeption</li>
+					<li class="active">Kreation</li>
+					<li>SEO</li>
+					<li>Development</li>
+					<li>Maintenance</li>
+					<li>Online Marketing</li>
+					<li>Social Media</li>
+					<li>Mobile Solution</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="mwSwipeMenuWrapper2">
+			<div class="swipeMenuContainer">
+				<ul>
+					<li>Beratung</li>
+					<li>Konzeption</li>
+					<li>Development</li>
+					<li>Maintenance</li>
+					<li>SEO</li>
+					<li>Online Marketing</li>
+					<li class="active">Kreation</li>
+					<li>Social Media</li>
+					<li>Mobile Solution</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

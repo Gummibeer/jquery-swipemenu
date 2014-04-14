@@ -1,0 +1,59 @@
+body {
+	background: #cccccc;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.swipeMenuWrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	background: #262626;
+}
+
+.swipeMenuWrapper .swipeMenuContainer {
+	width: 1000px;
+	background: #262626;
+	margin: 0;
+	padding: 0;
+}
+
+.swipeMenuWrapper .swipeMenuContainer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.swipeMenuWrapper .swipeMenuContainer ul li {
+	float: left;
+	border: 0;
+	border-bottom: 5px solid transparent;
+	color: #ffffff;
+	margin: 0;
+	padding: 1.5em 2em;
+	display: block;
+	position: relative;
+}
+
+.swipeMenuWrapper .swipeMenuContainer ul li.swipeMenuBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin: 0;
+	margin-left: -100%;
+	background: rgba(249,151,0,0.1);
+	border: none;
+}
+
+.swipeMenuWrapper .swipeMenuContainer ul li.active {
+	color: #f99700;
+	border-color: #f99700;
+}
